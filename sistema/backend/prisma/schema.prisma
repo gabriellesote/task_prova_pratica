@@ -19,5 +19,5 @@ model Produtos{
     quantidade Int
     valor  Float
     created_at DateTime @default(now())
-    modified_at DateTime @updatedAt
+    modified_at DateTime? @updatedAt
 }
