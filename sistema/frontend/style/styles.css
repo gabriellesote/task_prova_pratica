@@ -9,7 +9,7 @@
 :root{
   --cor-principal: #F4A5AE ;
   --cor-detalhe: #AA7DCE ;
-  --cor-suporte: #A8577E;
+  --cor-suporte: #ee6cab;
   --claro: #f5d7e3 ;
   --escuro: #3B429F;
   --meio-termo: #F5DD90 ;
@@ -42,9 +42,58 @@ body{
 }
 
 .exibicao{
+  display: flex;
+  justify-content: center;
   background-color: white;
-  width: 60%;
-  padding: 10px;
+  width: 50%;
   border: 1px solid  var(--cinza1);
   border-radius: 15px;
+  padding: 10px;
+}
+tbody{
+  width: 100%;
+}
+table{
+  display: 	flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  border: none;
+  z-index: 0;
+}
+
+.titulos{
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+  padding: 5px;
+  background-color: var(--cor-detalhe);
+  border-radius: 15px 15px 0px 0px;
+  color: var(--branco);
+}
+
+.infos{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 5px;
+}
+
+td{
+  text-align: center;
+  width: 30%;
+  border: 1px 0px 1px 0px solid var(--preto)
+}
+
+th{
+  width: ;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.imagem{
+  height: 1.5em;
+  width: 1.5em;
 }
