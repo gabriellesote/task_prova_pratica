@@ -52,3 +52,16 @@ export const listarProdutos = async (req,res) => {
     res.status(400).json({message: 'Erro ao listar produtos'}, message.error)
   }
 }
+
+export const deletarProduto = async(req,res) => {
+  const {id} = req.params.id
+  try{
+    const deletar = await prisma.produtos.delete({
+      where: {id}
+    })
+    res.status(200).json({message: 'Produto deletado com sucesso!'})
+  }
+  catch(error){
+    res.status(400).json({message: 'Erro ao deletar produto!'}, error.message)
+  }
+}
