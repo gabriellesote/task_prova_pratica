@@ -1,3 +1,7 @@
+import { excluirProduto } from "./excluirProdutos.js";
+
+const lixo = ""
+
 export async function exibirProdutos() {
   try {
     const response = await axios.get("http://localhost:2002/produtos/listar");
@@ -18,9 +22,25 @@ export async function exibirProdutos() {
       const quantidadeTd = criarTd(produto.quantidade);
       const valorTd = criarTd(produto.valor.toFixed(2));
 
+      const canetaImg = criarImg()
+      canetaImg.src = "assets/pen2.png"
+      canetaImg.alt = "Editar";
+      canetaImg.classList.add("caneta")
+
+      const excluirEditarTd = criarTd();
+      const lixoImg = criarImg();
+      lixoImg.src = "assets/trash.png";
+      lixoImg.alt = "Excluir";
+      lixoImg.classList.add("lixo");
+      lixoImg.addEventListener("click", () => excluirProduto(produto.id));
+
+      excluirEditarTd.appendChild(lixoImg);
+      excluirEditarTd.appendChild(canetaImg);
+
       tr.appendChild(nomeTd);
       tr.appendChild(quantidadeTd);
       tr.appendChild(valorTd);
+      tr.appendChild(excluirEditarTd);
 
       tabela.appendChild(tr);
     }
@@ -43,4 +63,10 @@ function criarTr() {
   const tr = document.createElement("tr");
   tr.classList.add("infos");
   return tr;
+}
+
+function criarImg(){
+  const img = document.createElement("img");
+  img.classList.add("imagem")
+  return img
 }
