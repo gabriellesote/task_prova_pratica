@@ -43,7 +43,7 @@
 
 <p> Abaixo terá a explicação de como utilizar a aplicação </p>
 
-<h3> ✏️ Dê gitclone no repositório </h3>
+<h3> ✏️ Clone o repositório </h3>
 
 <p> Primeiro passo é clonar todo o repositório para ter acesso aos arquivos.
   Em um lugar da sua preferência execute o comando:
@@ -55,7 +55,7 @@ git clone https://github.com/gabriellesote/task_prova_pratica.git
 
 <h3> 🔨 Configurando o banco de dados</h3>
 
->❗Você deve ter o MySQL baixado, caso não tenha confira aqui:  [MySQL🔗](https://www.mysql.com/)
+>❗Você deve ter o MySQL instalado, caso não tenha confira aqui:  [MySQL🔗](https://www.mysql.com/)
 >
 > 👣 [Tutorial de como baixar MSQL🔗](https://www.youtube.com/watch?v=IEUgVwjXF0o&t=574s&pp=ygURY29tbyBiYWl4YXIgbXlzcWw%3D)
 >
@@ -72,18 +72,18 @@ Navegue até  `sistema/backend/banco_de_dados/` e importe o .sql que está nesta
 <h3> 🪛 Depedências </h3>
 <p> 
 
-  Na pasta `sistema` execute o seguinte comando para instalar todas as depedências do projeto: </p>
+  Na pasta `sistema`, execute o seguinte comando para instalar todas as dependências do projeto</p>
 
 ```
 npm install
 ```
 
 <h3> ⛓️ .ENV </h3>
-<p> Para que a api tenha aceso ao banco de dados, é necessário das suas credenciais do banco de dados. </p>
+<p> Para que a API tenha acesso ao banco de dados, é necessário das suas credenciais do banco de dados. </p>
 
 <p> 
 
-No arquivo `.env` na pasta `sistema/backend`, se NECESSÁRIO, troque o usuário, senha e a porta do localhost. Um exemplo:</p>
+No arquivo `.env` na pasta `sistema/backend`, se NECESSÁRIO, troque o usuário, senha e a porta do localhost. Exemplo:</p>
 
 ```
 DATABASE_URL="mysql://johndoe:randompassword@localhost:3306/mydb"
@@ -92,7 +92,7 @@ DATABASE_URL="mysql://johndoe:randompassword@localhost:3306/mydb"
 <h3> ▶️ Rodando o BackEnd </h3>
 <p>
 
- Para rodar o backend, execute o seguinte comando na pasta `sistema/backend`: </p>
+ Para Iniciar o backend, execute o seguinte comando na pasta `sistema/backend`: </p>
 
 ```
 nodemon server.js
@@ -100,13 +100,13 @@ nodemon server.js
 
 <h2> ⚙️ Configurando o FrontEnd </h2>
 
-<p> Como não usei nenhum framework no front, para rodá-lo é necessário apenas a extensão Live Server do VSCode</p>
+<p> Como não usei nenhum framework no front, para executá-lo basta ter a extensão Live Server do VSCode</p>
 
 <img src="assets/live_server.png" width=80% alt="imagem do live serve">
 
 <p>
 
- Abra o arquivo `index.html` na pasta `sistema/frontend` e  no canto inferior direito do VSCode, clique em `Go Live` para rodar o projeto. </p>
+ Abra o arquivo `index.html` na pasta `sistema/frontend` e  no canto inferior direito do VSCode, clique em `Go Live` para executar o projeto. </p>
 
 <img src="assets/go_live.png" width=80% alt="imagem do live serve">
 
@@ -114,7 +114,7 @@ nodemon server.js
 <h2> 📜 Sobre a API </h2>
 
 
-<p> Para testar a API, você pode usar o Postman ou o Insomnia. Mas eu usei o Postman, caso queira conferir os testes no Postman, só clicar abaixo  ↓↓↓.  </p> 
+<p> Para testar a API, você pode usar o Postman ou o Insomnia. Mas eu usei o Postman, caso queira conferir os testes no Postman, clique no link abaixo.  </p> 
 
 [![testes - postman](https://img.shields.io/badge/testes-postman-orange?style=for-the-badge&logo=postman&logoColor=white)](https://documenter.getpostman.com/view/38261292/2sAYX8HLWA)
 
@@ -155,4 +155,4 @@ http://localhost:2002/produtos/deletar/:id
 ```
 
 
-<h4 align="center" > ·͙*̩̩͙˚̩̥̩̥*̩̩̥͙　✩ Muito obrigada pela atenção!! ✩　*̩̩̥͙˚̩̥̩̥*̩̩͙‧͙ </h4>
+<h4 align="center" > ·͙*̩̩͙˚̩̥̩̥*̩̩̥͙　✩ Muito obrigada pela atenção! ✩　*̩̩̥͙˚̩̥̩̥*̩̩͙‧͙ </h4>
