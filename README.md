@@ -20,13 +20,14 @@
 [![PDF - prova teórica](https://img.shields.io/badge/PDF-prova_teórica-pink?style=for-the-badge&logo=googledocs&logoColor=white)](https://github.com/gabriellesote/task_prova_pratica/blob/main/docs/Prova%20Te%C3%B3rica%20Task.pdf)
 [![PDF - prova prática](https://img.shields.io/badge/PDF-prova_prática-CDC1FF?style=for-the-badge&logo=googledocs&logoColor=white)](https://github.com/gabriellesote/task_prova_pratica/blob/main/docs/Prova%20Pr%C3%A1tica%20Task%20(2).pdf)
 
-# Soluções
-## 🤓 Prova Teórica
+
+# 🤓 Prova Teórica
 
 [![Prova teórica  - Solução](https://img.shields.io/badge/Prova_teórica_-Solução-BFECFF?style=for-the-badge&logo=googledocs&logoColor=white)](https://github.com/gabriellesote/task_prova_pratica/blob/main/docs/gabrielleSoares_provaTeorica.pdf)
 
+<br>
 
-## 🚀 Prova prática
+# 🚀 Prova prática
 
 ### Tecnologias utilizadas
 
@@ -38,11 +39,11 @@
 ![prisma](https://img.shields.io/badge/prisma-A888B5?style=for-the-badge&logo=prisma&logoColor=white)
 ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 
-## Documentação
+## 📝 Documentação
 
 <p> Abaixo terá a explicação de como utilizar a aplicação </p>
 
-<h3> 📋 Dê gitclone no repositório </h3>
+<h3> ✏️ Dê gitclone no repositório </h3>
 
 <p> Primeiro passo é clonar todo o repositório para ter acesso aos arquivos.
   Em um lugar da sua preferência execute o comando:
