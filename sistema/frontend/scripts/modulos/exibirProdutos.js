@@ -1,5 +1,5 @@
 import { excluirProduto } from "./excluirProdutos.js";
-
+import { abrirPopupEdicao } from "./editarProdutos.js";
 const lixo = ""
 
 export async function exibirProdutos() {
@@ -22,10 +22,13 @@ export async function exibirProdutos() {
       const quantidadeTd = criarTd(produto.quantidade);
       const valorTd = criarTd(produto.valor.toFixed(2));
 
-      const canetaImg = criarImg()
-      canetaImg.src = "assets/pen2.png"
-      canetaImg.alt = "Editar";
-      canetaImg.classList.add("caneta")
+      const editarImg = criarImg()
+      editarImg.src = "assets/pen2.png"
+      editarImg.alt = "Editar";
+      editarImg.classList.add("editar")
+      editarImg.addEventListener("click", () => {
+        abrirPopupEdicao(produto);
+      });
 
       const excluirEditarTd = criarTd();
       const lixoImg = criarImg();
@@ -35,7 +38,7 @@ export async function exibirProdutos() {
       lixoImg.addEventListener("click", () => excluirProduto(produto.id));
 
       excluirEditarTd.appendChild(lixoImg);
-      excluirEditarTd.appendChild(canetaImg);
+      excluirEditarTd.appendChild(editarImg);
 
       tr.appendChild(nomeTd);
       tr.appendChild(quantidadeTd);

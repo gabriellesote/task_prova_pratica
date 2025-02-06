@@ -27,17 +27,18 @@ export const editarProduto = async (req, res) => {
 
   try {
     const produtoAtualizado = await prisma.produtos.update({
-      where: { id: parseInt(id) },
+      where: { id: parseInt(id )},
       data: {
         nome_produto,
-        valor,
-        quantidade,
+        valor: parseFloat(valor),
+        quantidade: parseInt(quantidade),
         modified_at: new Date(),
       },
     });
 
     res.json(produtoAtualizado);
   } catch (error) {
+    console.error("Erro no backend:", error);
     res.status(500).json({ error: `Erro ao atualizar o produto ${id}` });
   }
 };
