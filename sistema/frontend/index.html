@@ -15,7 +15,7 @@
     <section class="coleta">
       <h1> Estoque de Produtos</h1>
 
-      <form action="" class="formulario">
+      <form class="formulario">
         <div class="inputs_labels">
           <label for="nome">Nome </label>
           <input type="text" id="nome">
@@ -23,7 +23,7 @@
           <label for="quantidade">Quantidade</label>
           <input type="text" id="quantidade">
 
-          <label for="valor">Valor</label>
+          <label for="valor">Valor (R$)</label>
           <input type="text" id="valor">
 
           <button type="submit" class="botao">Criar</button>
@@ -42,12 +42,10 @@
         </tr>
 
         <tr class="infos">
-          <td class="estoque"> nome 1 </td>
-          <td class="estoque"> 2 <span class="aumentar_diminuir"> <img src="assets/up.png" alt="up" class="up_down">
-              <img src="assets/down.png" alt="down" class="up_down"></span></td>
+          <td class="estoque">  2</td>
+          <td class="estoque">2 </td>
           <td class="estoque"> 2 </td>
-          <td class="estoque"> <img src="assets/pen2.png" alt="editar" class="imagem_botao"> <img src="assets/trash.png"
-              alt="excluir" class="imagem_botao"></td>
+          <td class="estoque">2 </td>
 
         </tr>
 
@@ -59,16 +57,16 @@
   <!-- Pop-up de edição de produto -->
 <div id="popup-edicao" class="popup">
   <div class="popup-content">
-    <h3>Editar Produto</h3>
-    <label for="nome-editar">Nome:</label>
+ 
+    <label class="label-edit" for="nome-editar">Nome:</label>
     <input type="text" id="nome-editar">
-    
-    <label for="quantidade-editar">Quantidade:</label>
+
+    <label class="label-edit" for="quantidade-editar">Quantidade:</label>
     <input type="text" id="quantidade-editar">
-    
-    <label for="valor-editar">Valor:</label>
+
+    <label  class="label-edit" for="valor-editar">Valor:</label>
     <input type="text" id="valor-editar">
-    
+
     <button id="salvar-edicao">Salvar</button>
     <button id="cancelar-edicao">Cancelar</button>
   </div>

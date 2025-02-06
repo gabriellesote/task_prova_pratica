@@ -1,4 +1,4 @@
-/* * {
+* {
   margin: 0px;
   border: none;
   padding: 0px;
@@ -44,7 +44,6 @@ body {
   justify-content: center;
   background-color: white;
   width: 65%;
-
   border-radius: 15px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -55,7 +54,7 @@ tbody {
 
 table {
   display: flex;
-  flex-direction: row;
+  flex-direction:  column;
   justify-content: space-evenly;
   width: 100%;
   border: none;
@@ -76,12 +75,13 @@ table {
 
 .infos {
   display: flex;
+  
   justify-content: space-evenly;
   width: 100%;
   padding: 5px;
   margin-top: 10px;
   margin-bottom: 5px;
-  
+
 }
 
 td {
@@ -102,7 +102,7 @@ th {
   width: 1.5em;
 }
 
-.imagem_botao {
+.editar, .lixo {
   height: 1.5em;
   width: 1.5em;
   cursor: pointer;
@@ -110,20 +110,8 @@ th {
   border-radius: 5px;
 }
 
-.imagem_botao:hover {
+.editar:hover, .lixo:hover {
   background-color: var(--branco2);
-}
-
-.up_down {
-  height: 1.5em;
-  width: 1.5em;
-  background-color: var(--escuro);
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.up_down:hover {
-  background-color: var(--cor-suporte);
 }
 
 .estoque {
@@ -132,7 +120,7 @@ th {
   justify-content: space-evenly;
 }
 
-  Abaixo, parte dos inputs 
+
 
 .coleta {
   display: flex;
@@ -140,33 +128,33 @@ th {
   align-items: center;
   justify-content: center;
 
-  width:65%;
+  width: 65%;
   height: 30%;
   border-radius: 15px;
-  
+
 }
 
-.formulario{
+.formulario {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: whitesmoke;
-  width: 60%;
+  width: 70%;
   height: 90%;
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.inputs_labels{
-  display:  grid;
+.inputs_labels {
+  display: grid;
   row-gap: 8px;
   width: 60%;
   height: 80%;
-  grid-template-columns: 0.5fr 1fr ;
+  grid-template-columns: 0.5fr 1fr;
 }
 
-.botao{
+.botao {
   background-color: var(--escuro);
   width: 20%;
 
@@ -179,7 +167,8 @@ th {
 
   border-radius: 5px;
 }
-label{
+
+label {
   background-color: var(--claro);
   padding: 5px;
   font-weight: 600;
@@ -190,71 +179,46 @@ label{
   height: 60%;
 }
 
-input{
-border-radius: 0px 5px 5px 0px;
-padding: 5px;
-height: 60%;
+input {
+  border-radius: 0px 5px 5px 0px;
+  padding: 5px;
+  height: 60%;
 }
 
-input:focus{
+input:focus {
   outline: none;
   border: none;
   background-color: var(--branco3);
 }
 
-h1{
+h1 {
   margin-bottom: 15px;
   font-size: 2em;
-} */
-
-
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
 }
 
-body{
-  height: 100vh;
- background-color: bisque;
-}
 
-table{
-  margin-top: 20px;
-  width: 500px;
-  background-color: aliceblue;
-}
 
-.container_maior{
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  width: 100%;
-  height: 100%;
-}
-
-img{
-  width: 1em;
-}
-
- /* Estilo para o pop-up */
+/* Estilo para o pop-up */
 .popup {
-  display: none; /* Inicialmente escondido */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fundo semitransparente */
   justify-content: center;
   align-items: center;
 }
 
 .popup-content {
-  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr ;
+  row-gap: 10px;
+  background-color:var(--branco3);
   padding: 20px;
   border-radius: 8px;
   width: 300px;
@@ -262,10 +226,13 @@ img{
 }
 
 .popup.open {
-  display: flex; /* Exibe o pop-up quando a classe 'open' for adicionada */
+  display: flex;
+  /* Exibe o pop-up quando a classe 'open' for adicionada */
 }
 
-button {
+
+#salvar-edicao, #cancelar-edicao {
+
   margin-top: 10px;
   padding: 10px;
   background-color: #4CAF50;
@@ -285,4 +252,13 @@ button:hover {
 
 #cancelar-edicao:hover {
   background-color: #da190b;
+}
+
+#nome-editar, #quantidade-editar, #valor-editar{
+  height: 2em;
+  border: 1px solid var(--claro);
+}
+
+.label-edit{
+  height: 2em;
 }

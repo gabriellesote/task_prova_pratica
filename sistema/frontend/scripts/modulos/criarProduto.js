@@ -13,12 +13,11 @@ export async function adicionarProduto(event) {
 
   console.log(nomeProduto, quantidadeProduto, valorProduto);
 
-  if (!nomeProduto || !quantidadeProduto || isNaN(valorProduto)) {
-    alert("Preencha todos os campos!");
+  if (!nomeProduto || !quantidadeProduto || isNaN(valorProduto)  ) {
+    alert("Preencha com atenção os campos!");
     return;
   }
-
-  if (!Number.isInteger(Number(quantidadeProduto))) {
+  if (isNaN(quantidadeProduto)){
     alert("A quantidade deve ser um número inteiro!");
     return;
   }
@@ -39,7 +38,7 @@ export async function adicionarProduto(event) {
     exibirProdutos();
   } catch (error) {
     console.error("Um erro ocorreu:", error);
-    alert("Erro ao adicionar o produto!");
+  
   }
 
 
