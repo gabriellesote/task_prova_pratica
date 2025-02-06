@@ -11,7 +11,7 @@
 ![gabrielle.sote@gmail.com](https://img.shields.io/badge/gabrielle.sote%40gmail.com-black?style=for-the-badge&logo=gmail&logoColor=red)
 </div>
 
-## 🧭 Sobre
+# 🧭 Sobre
 
 <p> Processo seletivo para estágio em desenvolvimento na empresa Task. </p>
 
@@ -42,7 +42,7 @@
 
 <p> Abaixo terá a explicação de como utilizar a aplicação </p>
 
-<h3> 📋 Dê gitclone no reposiótio </h3>
+<h3> 📋 Dê gitclone no repositório </h3>
 
 <p> Primeiro passo é clonar todo o repositório para ter acesso aos arquivos.
   Em um lugar da sua preferência execute o comando:
@@ -88,6 +88,60 @@ No arquivo `.env` na pasta `sistema/backend`, se NECESSÁRIO, troque o usuário,
 DATABASE_URL="mysql://johndoe:randompassword@localhost:3306/mydb"
 ```
 
+<h3> Rodando o BackEnd </h3>
+<p> Para rodar o backend, execute o seguinte comando na pasta `sistema/backend`: </p>
+
+```
+nodemon server.js
+```
+
 <h2> Configurando o FrontEnd </h2>
 
 <p> Como não usei nenhum framework no front, para roda-lo é necessário apenas a extensão Live Server do VSCode</p>
+
+<p> Abra o arquivo `index.html` na pasta `sistema/frontend` e  no canto inferior direito do VSCode, clique em `Go Live` para rodar o projeto. </p>
+
+
+
+
+<h2> Sobre a API </h2>
+
+[![testes - postman](https://img.shields.io/badge/testes-postman-orange?style=for-the-badge&logo=postman&logoColor=white)](https://documenter.getpostman.com/view/38261292/2sAYX8HLWA)
+
+<p> Para testar a API, você pode usar o Postman ou o Insomnia. Mas eu usei o Postman, caso queira conferir os testes no Postman, só clicar acima ⬆︎⬆︎⬆︎.  </p> 
+
+<h3> Endpoints </h3>
+
+<h4> GET </h4>
+<p> Para pegar todos os produtos, você pode usar o seguinte endpoint: </p
+
+```
+http://localhost:2002/produtos/listar
+```
+
+
+<h4> PUT </h4>
+<p> Para atualizar um produto, você pode usar o seguinte endpoint: </p>
+
+```
+http://localhost:2002/produtos/editar/:id
+```
+
+
+<h4> POST </h4>
+
+<p> Para criar um novo produto, você pode usar o seguinte endpoint: </p>
+
+```
+http://localhost:2002/produtos/editar/:id
+```
+
+
+<h4> DELETE  </h4>
+
+<p> Para deletar um produto, você pode usar o seguinte endpoint: </p>
+
+```
+http://localhost:2002/produtos/deletar/:id
+```
+
