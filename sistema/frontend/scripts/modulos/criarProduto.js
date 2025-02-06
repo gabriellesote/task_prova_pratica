@@ -1,3 +1,5 @@
+import { exibirProdutos } from "./exibirProdutos.js";
+
 const nome = document.getElementById("nome")
 const quantidade = document.getElementById("quantidade")
 const valor = document.getElementById("valor")
@@ -34,7 +36,7 @@ export async function adicionarProduto(event) {
     nome.value = ""
     quantidade.value = ""
     valor.value = ""
-
+    exibirProdutos();
   } catch (error) {
     console.error("Um erro ocorreu:", error);
     alert("Erro ao adicionar o produto!");
