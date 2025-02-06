@@ -32,11 +32,11 @@
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 ![prisma](https://img.shields.io/badge/prisma-A888B5?style=for-the-badge&logo=prisma&logoColor=white)
+![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 
 ## Documentação
 
@@ -66,9 +66,9 @@ git clone https://github.com/gabriellesote/task_prova_pratica.git
 
 Navegue até  `sistema/backend/banco_de_dados/` e importe o .sql que está nesta pasta. </p>
 
-<h2> Configurando o Backend </h2>
+<h2> ⚙️ Configurando o Backend </h2>
 
-<h3>  Depedências </h3>
+<h3> 🪛 Depedências </h3>
 <p> 
 
   Na pasta `sistema` execute o seguinte comando para instalar todas as depedências do projeto: </p>
@@ -77,7 +77,7 @@ Navegue até  `sistema/backend/banco_de_dados/` e importe o .sql que está nesta
 npm install
 ```
 
-<h3> .ENV </h3>
+<h3> ⛓️ .ENV </h3>
 <p> Para que a api tenha aceso ao banco de dados, é necessário das suas credenciais do banco de dados. </p>
 
 <p> 
@@ -88,31 +88,39 @@ No arquivo `.env` na pasta `sistema/backend`, se NECESSÁRIO, troque o usuário,
 DATABASE_URL="mysql://johndoe:randompassword@localhost:3306/mydb"
 ```
 
-<h3> Rodando o BackEnd </h3>
-<p> Para rodar o backend, execute o seguinte comando na pasta `sistema/backend`: </p>
+<h3> ▶️ Rodando o BackEnd </h3>
+<p>
+
+ Para rodar o backend, execute o seguinte comando na pasta `sistema/backend`: </p>
 
 ```
 nodemon server.js
 ```
 
-<h2> Configurando o FrontEnd </h2>
+<h2> ⚙️ Configurando o FrontEnd </h2>
 
-<p> Como não usei nenhum framework no front, para roda-lo é necessário apenas a extensão Live Server do VSCode</p>
+<p> Como não usei nenhum framework no front, para rodá-lo é necessário apenas a extensão Live Server do VSCode</p>
 
-<p> Abra o arquivo `index.html` na pasta `sistema/frontend` e  no canto inferior direito do VSCode, clique em `Go Live` para rodar o projeto. </p>
+<img src="assets/live_server.png" width=80% alt="imagem do live serve">
+
+<p>
+
+ Abra o arquivo `index.html` na pasta `sistema/frontend` e  no canto inferior direito do VSCode, clique em `Go Live` para rodar o projeto. </p>
+
+<img src="assets/go_live.png" width=80% alt="imagem do live serve">
 
 
+<h2> 📜 Sobre a API </h2>
 
 
-<h2> Sobre a API </h2>
+<p> Para testar a API, você pode usar o Postman ou o Insomnia. Mas eu usei o Postman, caso queira conferir os testes no Postman, só clicar abaixo  ↓↓↓.  </p> 
 
 [![testes - postman](https://img.shields.io/badge/testes-postman-orange?style=for-the-badge&logo=postman&logoColor=white)](https://documenter.getpostman.com/view/38261292/2sAYX8HLWA)
 
-<p> Para testar a API, você pode usar o Postman ou o Insomnia. Mas eu usei o Postman, caso queira conferir os testes no Postman, só clicar acima ⬆︎⬆︎⬆︎.  </p> 
 
-<h3> Endpoints </h3>
+<h3> 📍 Endpoints </h3>
 
-<h4> GET </h4>
+<h4> ⚜️ GET </h4>
 <p> Para pegar todos os produtos, você pode usar o seguinte endpoint: </p
 
 ```
@@ -120,7 +128,7 @@ http://localhost:2002/produtos/listar
 ```
 
 
-<h4> PUT </h4>
+<h4> ⚜️ PUT </h4>
 <p> Para atualizar um produto, você pode usar o seguinte endpoint: </p>
 
 ```
@@ -128,7 +136,7 @@ http://localhost:2002/produtos/editar/:id
 ```
 
 
-<h4> POST </h4>
+<h4> ⚜️ POST </h4>
 
 <p> Para criar um novo produto, você pode usar o seguinte endpoint: </p>
 
@@ -137,7 +145,7 @@ http://localhost:2002/produtos/editar/:id
 ```
 
 
-<h4> DELETE  </h4>
+<h4> ⚜️ DELETE  </h4>
 
 <p> Para deletar um produto, você pode usar o seguinte endpoint: </p>
 
@@ -145,3 +153,5 @@ http://localhost:2002/produtos/editar/:id
 http://localhost:2002/produtos/deletar/:id
 ```
 
+
+<h4 align="center" > ·͙*̩̩͙˚̩̥̩̥*̩̩̥͙　✩ Muito obrigada pela atenção!! ✩　*̩̩̥͙˚̩̥̩̥*̩̩͙‧͙ </h4>
