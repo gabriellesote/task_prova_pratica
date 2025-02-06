@@ -13,8 +13,9 @@
   --claro: #f5d7e3;
   --escuro: #3B429F;
   --meio-termo: #F5DD90;
-  --branco: #fff5ff;
+  --branco: #fcf6fc;
   --branco2: #ffecff;
+  --branco3: #faf5f7;
   --preto: #161616;
   --pretofull: #000000;
   --cinza1: #575757;
@@ -45,6 +46,7 @@ body {
   width: 65%;
 
   border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 tbody {
@@ -79,6 +81,7 @@ table {
   padding: 5px;
   margin-top: 10px;
   margin-bottom: 5px;
+  
 }
 
 td {
@@ -131,9 +134,70 @@ th {
 
 /* Abaixo, parte dos inputs */
 
-.input {
-  background-color: var(--meio-termo);
+.coleta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   width:65%;
-  height: 20%;
+  height: 30%;
   border-radius: 15px;
+  
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 60%;
+  height: 90%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.inputs_labels{
+  display:  grid;
+  row-gap: 8px;
+  width: 60%;
+  height: 80%;
+  grid-template-columns: 0.5fr 1fr ;
+}
+
+.botao{
+  background-color: var(--escuro);
+  width: 20%;
+
+  grid-column: span 2;
+  justify-self: center;
+  color: var(--branco2);
+  font-weight: 500;
+  font-size: 1.1em;
+  cursor: pointer;
+
+  border-radius: 5px;
+}
+label{
+  background-color: var(--claro);
+  padding: 5px;
+  font-weight: 600;
+  font-size: .9em;
+  color: var(--preto);
+  text-align: center;
+  border-radius: 5px 0px 0px 5px;
+  height: 60%;
+}
+
+input{
+border-radius: 0px 5px 5px 0px;
+padding: 5px;
+height: 60%;
+}
+
+input:focus{
+  outline: none;
+  border: none;
+  background-color: var(--branco3);
 }
