@@ -42,6 +42,12 @@
 
 <p> Abaixo terá a explicação de como utilizar a aplicação </p>
 
+<h3> 📋 Dê gitclone no reposiótio </h3>
+<p> Primeiro passo é clonar todo o repositório para ter acesso aos arquivos.
+  Em um lugar da sua preferência execute o comando: 
+</p>
+
+
 <h3> 🔨 Configurando o banco de dados</h3>
 
 <h4>
