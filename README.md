@@ -78,16 +78,7 @@ Navegue até  `sistema/backend/banco_de_dados/` e importe o .sql que está nesta
 npm install
 ```
 
-<h3> ⛓️ .ENV </h3>
-<p> Para que a API tenha acesso ao banco de dados, é necessário das suas credenciais do banco de dados. </p>
 
-<p> 
-
-No arquivo `.env` na pasta `sistema/backend`, se NECESSÁRIO, troque o usuário, senha e a porta do localhost. Exemplo:</p>
-
-```
-DATABASE_URL="mysql://johndoe:randompassword@localhost:3306/mydb"
-```
 
 <h3> ▶️ Rodando o BackEnd </h3>
 <p>
